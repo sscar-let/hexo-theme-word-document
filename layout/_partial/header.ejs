@@ -1,0 +1,44 @@
+<header class="header">
+  <div class="header-line header-first-line">
+    <div class="icon save-icon">
+      <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+        <path d="M704 128H192c-35.2 0-64 28.8-64 64v640c0 35.2 28.8 64 64 64h640c35.2 0 64-28.8 64-64V320L704 128zM256 256h320v128H256V256z m256 512c-70.4 0-128-57.6-128-128s57.6-128 128-128 128 57.6 128 128-57.6 128-128 128z" p-id="5798" data-spm-anchor-id="a313x.search_index.0.i4.24243a81X7JxCo" class="selected" fill="#ffffff"></path>
+      </svg>
+    </div>
+    <div>
+      <a class="logo" href="<%- url_for() %>"><%= config.title %> - Word</a>
+    </div>
+    <div class="header-icon-container">
+      <div class="icon">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-spm-anchor-id="a313x.search_index.0.i4.61b73a81Q77aFd" width="200" height="200">
+          <path d="M863.7 552.5H160.3c-10.6 0-19.2-8.6-19.2-19.2v-41.7c0-10.6 8.6-19.2 19.2-19.2h703.3c10.6 0 19.2 8.6 19.2 19.2v41.7c0 10.6-8.5 19.2-19.1 19.2z" p-id="9418" data-spm-anchor-id="a313x.search_index.0.i5.61b73a81Q77aFd" class="selected" fill="#ffffff"></path>
+        </svg>
+      </div>
+      <div class="icon">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+          <path d="M770.9 923.3H253.1c-83.8 0-151.9-68.2-151.9-151.9V253.6c0-83.8 68.2-151.9 151.9-151.9h517.8c83.8 0 151.9 68.2 151.9 151.9v517.8c0 83.8-68.1 151.9-151.9 151.9zM253.1 181.7c-39.7 0-71.9 32.3-71.9 71.9v517.8c0 39.7 32.3 71.9 71.9 71.9h517.8c39.7 0 71.9-32.3 71.9-71.9V253.6c0-39.7-32.3-71.9-71.9-71.9H253.1z" p-id="2257" data-spm-anchor-id="a313x.collections_detail.0.i0.37b13a81rRmEHb" class="selected" fill="#ffffff"></path>
+        </svg>
+      </div>
+      <div class="icon">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-spm-anchor-id="a313x.collections_detail.0.i5.37b13a81rRmEHb" width="200" height="200">
+          <path d="M897.6 183.5L183 898.1c-7.5 7.5-19.6 7.5-27.1 0l-29.5-29.5c-7.5-7.5-7.5-19.6 0-27.1L841 126.9c7.5-7.5 19.6-7.5 27.1 0l29.5 29.5c7.5 7.4 7.5 19.6 0 27.1z" p-id="2445" data-spm-anchor-id="a313x.collections_detail.0.i3.37b13a81rRmEHb" class="selected" fill="#ffffff"></path>
+          <path d="M183 126.9l714.7 714.7c7.5 7.5 7.5 19.6 0 27.1l-29.5 29.5c-7.5 7.5-19.6 7.5-27.1 0L126.4 183.5c-7.5-7.5-7.5-19.6 0-27.1l29.5-29.5c7.4-7.5 19.6-7.5 27.1 0z" p-id="2446" data-spm-anchor-id="a313x.collections_detail.0.i4.37b13a81rRmEHb" class="selected" fill="#ffffff"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="header-line header-second-line">
+    <div class="header-router">
+      <% for (name in theme.menu) { %>
+      <div class="header-menu-item">
+          <a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
+        </div>
+      <% } %>
+    </div>
+    <div class="icon share-icon">
+      <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" data-spm-anchor-id="a313x.search_index.0.i1.24243a81X7JxCo" width="200" height="200">
+        <path d="M911.6 651.6l0 209.2c0 36-30.4 66.2-66.2 66.2l-699.6 1.2c-35.8 0-65-29.2-65-65.2l1.2-699.6c0-35.8 30.4-66.2 66.2-66.2l387 0L535.2 20.2 148.2 20.2c-81.8 0-143 82.8-143 156.8l0 686c0 77.6 63 140.8 140.8 140.8l686 0c82 0 156.6-68.2 156.6-143L988.6 651.6 911.6 651.6 911.6 651.6zM730.2 60.8l288.6 289.2L730.2 639l0-165.2c0 0-286.4-31.8-453.6 206.6 0 0 52.6-454.4 453.6-454.4L730.2 60.8 730.2 60.8z" fill="#ffffff" p-id="4748" data-spm-anchor-id="a313x.search_index.0.i0.24243a81X7JxCo" class="selected"></path>
+      </svg>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,79 @@
+.header {
+    font-size: 12pt;
+    line-height: 1;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A579A;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon:hover {
+    background-color: #b0b0b025;
+    cursor: pointer;
+}
+
+.save-icon {
+    margin-left: 20px;
+}
+
+.header-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+}
+
+.header-icon-container>div {
+    margin-right: 20px;
+}
+
+.header-router {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header-router>div {
+    margin-right: 40px;
+}
+
+.share-icon {
+    margin-right: 20px;
+}
+.header-menu-item a {
+    color: #fff;
+}
+.header-menu-item a:hover {
+    color: #9b9b9b;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 220mm) {
+    .icon {
+        width: 14px;
+        height: 14px;
+    }
+    a {
+        font-size: 14px;
+    }
+}

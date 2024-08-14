@@ -1,0 +1,22 @@
+<article class="post">
+  <% if (is_post()) { %>
+  <div class="post-title"><%= page.title %></div>
+  <div class="post-meta">
+    <div class="tags">
+      <% page.tags.map(tag => tag.name).forEach(function (tag) { %>
+      <div class="tag-item"><%- tag %></div>
+      <% }) %>
+    </div>
+  </div>
+  <% } %>
+
+  <main class="post-content">
+    <%- page.content.replace(/<br\s*\/?>/gi, '</p><p>') %>
+    <div class="post-meta-container">
+      <div class="post-date"><%- date(page.date, "YYYY年MM月DD日") %></div>
+    </div>
+  </main>
+
+</article>
+
+<%- js('js/main.js') %>

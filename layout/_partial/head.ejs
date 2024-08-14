@@ -1,0 +1,26 @@
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+          name="viewport"/>
+    <title>
+        <% if (page.title){ %>
+            <%= page.title %> 丨
+        <% } %>
+
+        <%= theme.title || config.title %>
+    </title>
+
+    <% if (theme.favicon){ %>
+        <%- favicon_tag(theme.favicon) %>
+    <% } %>
+
+    <% if (is_post()){ %>
+        <%- css('css/dependencies/atom-one-light.min.css') %>
+        <%- js('js/dependencies/highlight.min.js') %>
+    <% } %>
+
+    <%- css('css/root.css') %>
+    <%- css('css/style.css') %>
+    <%- css('css/header.css') %>
+    <%- css('css/post.css') %>
+</head>

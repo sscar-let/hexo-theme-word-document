@@ -1,0 +1,11 @@
+title: Word Document
+favicon: /favicon.ico
+icon: /favicon.ico
+
+menu:
+  首页: /
+  文章: /archives
+  标签: /tags
+  关于: /about
+
+copyright: 2024 hexo-theme-word-document

@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+:root {
+  --footer-color: #22272e;
+  --post-meta-color: #828388;
+  --font-color: #1a1a1a;
+  --bg-color: #ecebef;
+  --font-color-secondary: #666;
+  --font-color-extra: #aaa;
+  --font-color-refer: #1c2032;
+
+  --color-hr: #ddd;
+  --color-link: #4078F2;
+
+  --color-unactive: #eeeeee;
+  --color-active: #000;
+
+  --color-list-item-even: #fff;
+  --color-list-item-odd: #eee;
+
+
+  --color-background-code: #f8f8f8;
+  --color-border-code: #e7eaed;
+
+  --color-hashtag: #51525d;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,body {
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #c1c1c2;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
