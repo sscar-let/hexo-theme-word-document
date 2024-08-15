@@ -13,7 +13,9 @@
   <main class="post-content">
     <%- page.content.replace(/<br\s*\/?>/gi, '</p><p>') %>
     <div class="post-meta-container">
-      <div class="post-date"><%- date(page.date, "YYYY年MM月DD日") %></div>
+      <% if (page.date) { %>
+        <div class="post-date"><%- date(page.date, "YYYY年MM月DD日") %></div>
+      <% } %>
     </div>
   </main>
 

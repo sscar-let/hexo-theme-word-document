@@ -7,7 +7,7 @@
       <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>
     </div>
     <div class="post-item-extra">
-      <div class="date"><%- date(post.date, "YYYY年MM月DD日") %></div>
+      <div class="date"><%- date(post.date, "YYYY年MM月DD日 HH:mm:ss") %></div>
       <div class="tags">
         <% post.tags.map(tag => tag.name).forEach(function (tag) { %>
         <div class="tag-item"><%- tag %></div>
