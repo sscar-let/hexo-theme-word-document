@@ -4,7 +4,11 @@
   <% page.posts.each(function (post) { %>
   <li class="archive-item">
     <span class="date"><%= date(post.date, "YYYY年MM月DD日") %></span>
-    <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <% if (post.title.length > 40) { %>
+      <a class="title" href="<%- url_for(post.path) %>"><%= post.title.substring(0,40) %>...</a>
+    <% } else { %>
+      <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <% } %>
   </li>
   <% }) %>
 </ul>

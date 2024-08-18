@@ -78,13 +78,6 @@
   max-width: 100%;
 }
 
-.post-content code,
-.post-content kbd,
-.post-content pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
 .post-content hr {
   box-sizing: content-box;
   height: 0;
@@ -206,7 +199,6 @@
   font-family: "Roman FangSong","仿宋GB_18030","仿宋GB_2312","仿宋","宋体",sans-serif;
   font-size: 16pt;
   line-height: 9.7mm;
-  text-indent: 2em;
   margin: 0;
 }
 
@@ -238,10 +230,11 @@
 }
 
 .post-content code,
+.post-content kbd,
 .post-content pre {
   font-family: JetBrains Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo,
     Courier, monospace;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .post-content input::-webkit-inner-spin-button,
@@ -294,18 +287,15 @@
 }
 
 .post-content blockquote {
-  border-left: 0.25em solid var(--font-color-refer);
+  border-left: 0.25em solid var(--color-link);
   color: var(--font-color-refer);
-  padding: 0 1em;
-  /* margin-left: 1em; */
+  background-color: var(--color-background-code);
+  padding: 8px 1em;
 }
 
-.post-content blockquote > :first-child {
-  margin-top: 0;
-}
-
-.post-content blockquote > :last-child {
-  margin-bottom: 0;
+.post-content blockquote > p {
+  font-size: 14pt;
+  line-height: 1.5;
 }
 
 .post-content h1,
@@ -424,10 +414,10 @@
 .post-content code {
   background-color: var(--color-background-code);
   border-radius: 3px;
-  font-size: 85%;
+  font-size: 12px;
   margin: 0;
   padding: 0.2em 0.4em;
-  vertical-align: text-top;
+  vertical-align: top;
 }
 
 .post-content pre {

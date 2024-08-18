@@ -1,7 +1,11 @@
 <div class="post-list">
   <% page.posts.each(function (post) { %>
   <section class="post-item">
-    <a class="post-item-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <% if (post.title.length > 40) { %>
+      <a class="post-item-title" href="<%- url_for(post.path) %>"><%= post.title.substring(0,40) %>...</a>
+    <% } else { %>
+      <a class="post-item-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <% } %>
     <div class="post-item-summary">
       <%- strip_html(post.content).substring(0, 100) %>
       <a class="read-more" href="<%- url_for(post.path) %>"> ... </a>

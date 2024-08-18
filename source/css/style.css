@@ -13,6 +13,7 @@ body {
   scrollbar-width: none;
   font-family: "Roman FangSong","仿宋GB_18030","仿宋GB_2312","仿宋","宋体",sans-serif;
   font-size: 16pt;
+  letter-spacing: 1px;
   line-height: 9.8mm;
   color: var(--font-color);
   background-color: var(--bg-color);
@@ -186,8 +187,7 @@ a {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: center;
-  text-indent: 1em;
-  padding: 12px 0;
+  padding: 16px 8px;
 }
 
 .archive-item:nth-child(odd) {
