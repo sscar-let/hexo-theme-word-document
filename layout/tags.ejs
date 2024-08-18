@@ -3,7 +3,7 @@
 
     <% if (site.tags.length){ %>
         <div>
-            <h3>共计&nbsp;<%= site.tags.length %>&nbsp;个分类</h3>
+            <h3>共计&nbsp;<%= site.tags.length %>&nbsp;个标签</h3>
             <ul style="display: flex;flex-wrap: wrap;gap: 20px">
                 <% site.tags.sort('name').each(function(item){ %>
                     <% if(item.posts.length){ %>
